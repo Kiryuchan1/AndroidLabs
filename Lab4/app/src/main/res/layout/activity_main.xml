@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Аудіо кнопки -->
     <TextView
         android:text="Оберіть аудіо файл"
         android:layout_width="wrap_content"
@@ -39,7 +38,6 @@
         android:layout_height="16dp"
         android:layout_width="match_parent" />
 
-    <!-- Відео -->
     <TextView
         android:text="Оберіть відео файл"
         android:layout_width="wrap_content"

@@ -46,11 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         videoView = findViewById(R.id.videoView);
 
-        // Заповнюємо спіннери файлами
         loadAudioFiles();
         loadVideoFiles();
 
-        // Обробка вибору аудіо-файлу
         spinnerAudioFiles.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -66,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Обробка вибору відео-файлу
         spinnerVideoFiles.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -82,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Кнопки аудіо
         btnAudioPlay.setOnClickListener(v -> {
             if (audioPlayer != null && !audioPlayer.isPlaying()) {
                 audioPlayer.start();
@@ -102,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Кнопки відео
         btnVideoPlay.setOnClickListener(v -> {
             if (!videoView.isPlaying()) {
                 videoView.start();
