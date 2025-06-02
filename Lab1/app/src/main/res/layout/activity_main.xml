@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Оберіть фігуру:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/shapeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Коло" />
+
+            <RadioButton
+                android:id="@+id/rbSquare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Квадрат" />
+
+            <RadioButton
+                android:id="@+id/rbRectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прямокутник" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/inputRadius"
+            android:hint="Введіть радіус"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/inputSide"
+            android:hint="Введіть сторону"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/inputLength"
+            android:hint="Введіть довжину"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/inputWidth"
+            android:hint="Введіть ширину"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Оберіть, що обчислювати:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cbArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Площа" />
+
+        <CheckBox
+            android:id="@+id/cbPerimeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Периметр" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:text="OK"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:text="Результат буде тут"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
